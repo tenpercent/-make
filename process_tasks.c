@@ -13,7 +13,7 @@ static void* task(void *arg) {
     struct tmem* params = (struct tmem*) arg;
     int i = *params->counter;
     while (i > 0) {
-        i = (*params->counter)--;
+        i = --(*params->counter);
 	if (i < 0) break;
 	system(params->commands[i]);
 	printf("i = %d\n", i);
