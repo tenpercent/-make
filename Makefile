@@ -1,6 +1,6 @@
 OBJ = main.o graph.o dfs.o process_tasks.o
 LFLAGS = -lSystem -lpthread
-CFLAGS = -std=c11 -O2 -Wall
+CFLAGS = -std=c11 -g -Wall
 all: exe
 
 exe: mmake
